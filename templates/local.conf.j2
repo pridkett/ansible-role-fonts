@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+<fontconfig>
+{% if 'dirs' in fonts %}
+{% for dir in fonts['dirs'] %}
+    <dir>{{ dir }}</dir>
+{% endfor %}
+{% else %}
+    <dir>/mnt/c/Windows/Fonts</dir>
+{% endif %}
+</fontconfig>

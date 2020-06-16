@@ -1,0 +1,13 @@
+---
+# tasks file for fonts
+- name: install /etc/fonts/local.conf
+  template:
+    src: local.conf.j2
+    dest: /etc/fonts/local.conf
+  become: yes
+  tags: configure, configure-fonts
+
+- name: rebuilt fontconfig cache
+  command: /usr/bin/fc-cache
+  become: yes
+  tags: configure, configure-fonts
