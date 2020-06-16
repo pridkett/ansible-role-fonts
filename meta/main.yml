@@ -1,0 +1,16 @@
+galaxy_info:
+  author: Patrick Wagstrom
+  description: A simple ansible role to configure /etc/fonts/local.conf
+  issue_tracker_url: https://github.com/pridkett/ansible-role-fonts/issues
+  license: MIT
+
+  min_ansible_version: 2.3
+  
+  platforms:
+  - name: Ubuntu
+    versions:
+      - all
+
+  galaxy_tags: []
+
+dependencies: []
